@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect } from "react";
-import { Sparkles, BarChart2, Info, GraduationCap, History, Settings, ExternalLink, RefreshCw, AlertTriangle } from "lucide-react";
+import { Sparkles, BarChart2, Settings, RefreshCw, AlertTriangle } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import CsvUploader from "./components/CsvUploader";
 import SampleDataSelector from "./components/SampleDataSelector";
@@ -295,7 +295,7 @@ export default function App() {
                 系統提示詞 (System Instructions)
               </h3>
               <p className="text-xs text-indigo-100 leading-relaxed opacity-90 font-medium">
-                你是一位資深的數據科學與商業決策大師。會依據所提供 CSV 的資料、對指標進行深入統計解讀，剖析關鍵波動趨勢、交叉比對異常點，並以敏銳商業視角產出 3 ~ 5 點具體之營運方案。
+                你是一位專業的資料分析師。任務是接收一段 CSV 或表格結構的原始數據，理解其欄位意義，並提出精確的摘要報告與洞察。報告包含：資料概況與欄位理解、異常與缺值檢查、統計與趨勢洞察（包含總計概況、分類表現及業務建議）。
               </p>
             </div>
 

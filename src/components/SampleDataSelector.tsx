@@ -49,7 +49,7 @@ export default function SampleDataSelector({ onSelect }: SampleDataSelectorProps
                 <span className="font-bold text-slate-800 text-sm">{sample.title}</span>
               </div>
               <span className="text-[9px] font-mono font-extrabold uppercase bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded border border-slate-200/40">
-                {sample.id === "1" ? "E-COMMERCE" : sample.id === "2" ? "MARKETING" : "FEEDBACK"}
+                {sample.id === "ecommerce-sales" ? "E-COMMERCE" : sample.id === "marketing-conversion" ? "MARKETING" : "FEEDBACK"}
               </span>
             </div>
             <p className="text-xs text-slate-500 leading-relaxed line-clamp-2">

@@ -1,0 +1,21 @@
+[build]
+  command   = "vite build"
+  publish   = "dist"
+  functions = "netlify/functions"
+
+# 本機開發伺服器設定：告訴 netlify dev 要啟動的 framework 指令
+[dev]
+  command    = "vite"
+  targetPort = 5173
+  port       = 8888
+
+# 將前端的 /api/analyze 請求代理至 Netlify Function
+[[redirects]]
+  from   = "/api/analyze"
+  to     = "/.netlify/functions/analyze"
+  status = 200
+
+[functions]
+  # 讓 Netlify 知道 functions 使用 TypeScript
+  node_bundler = "esbuild"
+
